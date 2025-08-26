@@ -31,7 +31,7 @@ function Weather() {
     <div className="text-gray-900 bg-gray-300 p-5 rounded-lg font-sans w-full max-w-md mx-auto">
       <div>
         <h1 className="text-2xl font-bold mb-4 text-blue-400">Weather</h1>
-        <div className="flex gap-2 mb-4">
+        <div className="flex gap-2 mb-4 max-[400px]:flex-col">
           <input
             type="text"
             placeholder="Enter city/town..."

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div
-      className="h-fit p-5  border-r-[rgba(167,150,150,0.34)] mx-15"
+      className="h-fit p-5  border-r-[rgba(167,150,150,0.34)] mx-15 max-[500px]:mx-0"
       style={{ width: "150px" }}
     >
       <ul className="list-none flex flex-col items-start">

@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 function WebHeader() {
   return (
     <div>
-      <header className="bg-transparent flex items-center relative shadow-md font-sans min-h-[7em] mx-15  ">
+      <header className="bg-transparent flex items-center relative shadow-md font-sans min-h-[7em] mx-15 max-[500px]:mx-0  ">
         {/* Logo */}
         <span>
           <img className="h-60 w-auto object-contain p-0 ml-1 -mb-25 relative -top-12 max-[550px]:h-40" src={llglogo} alt="Logo" />
@@ -46,7 +46,7 @@ function WebHeader() {
         </div>
 
         {/* Main navbar - hidden on small screens */}
-        <nav className="absolute top-[79px] right-[1vw] max-[825px]:hidden">
+        <nav className="absolute top-[79px] right-[1vw] max-[845px]:hidden">
           <ul className="flex flex-row gap-4 list-none">
             <li className="cursor-pointer bg-[#E05048] h-8 rounded w-fit px-1  flex items-center justify-center shadow hover:scale-110 transition">
               <NavLink className="no-underline text-white" to={'/'}>home</NavLink>
@@ -69,9 +69,9 @@ function WebHeader() {
           </ul>
         </nav>
         {/* Responsive nav for mobile - only visible on small screens */}
-        <div className="min-[825px]: absolute top-19 left-0 w-full max-[550px]:top-9">
-          <ResponciveNav />
-        </div>
+        <div className="hidden max-[845px]:flex min-[846px]:hidden absolute right-0  z-101 max-[550px]:top-11">
+  <ResponciveNav />
+</div>
       </header>
     </div>
   );

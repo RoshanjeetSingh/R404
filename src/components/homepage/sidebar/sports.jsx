@@ -6,9 +6,12 @@ const Sports = () => {
     <div>
       <fieldset className="mt-8 mb-2">
         <legend>
+          <div className="flex items-center bg-white px-1.5 py-1 rounded">
+          <IoCarSportSharp className="text-2xl" />
           <h1 className="inline text-[#333] bg-white border-none px-1.5 rounded shadow-[3px_3px_5px_0_rgba(0,0,0,0.15)] font-bold text-xl flex items-center gap-2">
-            <IoCarSportSharp className="text-2xl" /> SPORTS
+             SPORTS
           </h1>
+          </div>
         </legend>
         <p className="text-[22px] px-2 py-0.5 font-[Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident delectus 
